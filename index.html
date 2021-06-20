@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="style.css">
     <!--font family-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
     <!--scrollrevealJS-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portafolio Omar Sosa</title>
 </head>
 <body>
     <!--menu and presentaion-->
+  <section class="home">
     <div class="container">
-    
-        <h1 class="title">&lth1&gt Omar Sosa &lt/h1&gt</h1>
-        <h2 class="title2">Front End Web Design Developer</h2>
+
+        <h1 class="title">&ltHi, I'm Omar Sosa&gt</h1>
+        <h2 class="title2">Frontend Developer</h2>
                 <div class="a1">
-                    <a href="#">Contact</a>
-                    <img class="image-menu" src="/img/codificacion-html.png" alt="">  
-                    <a href="#">About</a>
+                  <a href="#">Contact</a>
+                  <img class="image-menu" src="/img/codificacion-html.png" alt="">
+                  <a href="#about">About</a>
                 </div>
                 <div class="a2">
-                    <a href="#">Projects</a>
+                  <a href="#">Projects</a>
                 </div>
-                
-    </div> 
-    <!--carousel-projects-->
+    </div>
+  </section>
+    <!--carousel-projects
     <section class="carousel">
         <div class="carousel__container">
       
@@ -88,17 +89,20 @@
           </div>
     
         </div>
-      </section>
+      </section>-->
     <!--sobre mi / about me-->
+  <section id="about" class="about">
     <div class="container-about">
         <div class="container-about_language">
             <div class="container-description">
-              <h4 class="saludo">&lt/Hello,<br> my name is <br> Omar Sosa&gt</h4> <br>
-                <p class="description"> developer and web designer with the ability to create complete web sites ,my objective
-                as a web developer is to make creative designs and
-                technologically advanced.</p>
+              <h4 class="saludo">I'm Omar Sosa, Web Developer</h4>
+              <br> <br>
+                <p class="description"> I am a Front End developer with experience in creating websites and web applications. I specialize in JavaScript <br> <br>
+                  I am always seeking to improve my skills to continually grow professionally to be able to contribute consistently to the workgroup with which I am.</p><br>
+                  <a class="linkcv" href="https://drive.google.com/file/d/1P4RN6Q4GQWGD5o-d_eQWNFFA3L3lhYUJ/view?usp=sharing" target="blank">Download CV</a>
             </div>
             <div class="container-language">
+              <h4 class="saludo">My skills</h4>
                 <div class="img-one">
                   <img class="img" src="/img/codificacion-html.png" alt="">
                 </div>
@@ -114,39 +118,42 @@
                 <div class="img-four">
                   <img class="img" src="/img/js.png" alt="">
                 </div>
-                
+
             </div>
         </div>
     </div>
-
-    <section class="section-form">
-    
+  </section>
+  <section class="section-form">
         <div class="container-form">
           <h5 class="title-form">SAY "HELLO"</h5>
             <div class="formulario">
               <form action="">
 
                 <div class="c-input">
-                  <input class="input1" type="text" placeholder="Your name">
+                  <input class="input1" type="text" placeholder="Your name" id="name">
                 </div>
-                
+
                 <div class="c-input">
-                  <input class="input1" type="text" placeholder="Your E-Mail">
+                  <input class="input1" type="email" placeholder="Your E-Mail" id="email">
                 </div>
-                
+
                 <div class="c-input2">
-                  <textarea class="message" placeholder="Your message"></textarea>
+                  <textarea class="message" placeholder="Your message" id="message"></textarea>
                 </div>
-                
+
                 <div class="c-button">
-                  <input class="button" type="button" value="Send message">
+                  <button class="button" onclick="captura()"type="button">Send</button>
                 </div>
 
               </form>
             </div>
         </div>
-    </section>
-    
+  </section>
+  <!--projects-->
+  <section class="Projects">
+
+  </section>
+
     <!--javascript-->
     <script src="/app.js"></script>
 </body>
