@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 a {
     font-size: 4rem;
@@ -33,10 +33,13 @@ a {
     z-index: 1;
 }
 h1{
-    padding-top: 40px;
+    padding-top: 4.5rem;
+}
+span{
+    color: cornflowerblue;
 }
 .title {
-    font-size: 5rem;
+    font-size: 4.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,5 +328,15 @@ textarea{
 .button:hover{
     font-size: 2.5rem;
     height: 120%;
+}
+.skills{
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgb(255,252,250);
+    background: linear-gradient(0deg, rgba(255,252,250,1) 0%, rgba(231,231,231,1) 100%);
 }
 
