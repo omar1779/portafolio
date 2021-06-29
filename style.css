@@ -95,94 +95,6 @@ span{
     transform: rotate(360deg);
     transition-duration: .9s;
 }
-/*carrusel de los proyectos*/
-
-.categories__title{
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    padding-left: 30px;
-    padding-bottom: 50px;
-    width: 100%;
-}
-.carousel{
-    width: 100%;
-    overflow: scroll;
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.carousel__container{
-    padding-left: 30px;
-    white-space: nowrap;
-    margin: 70px 0px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-.carousel-item{
-    background-color: teal;
-    width: 200px;
-    height: 250px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-right: 27px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms;
-    transform-origin: center left;
-    position: relative;
-}
-.carousel-item:hover~.carousel-item {
-    transform: translate3d(100px, 0, 0);
-}
-.carousel__container:hover .carousel-item{
-    opacity:0.3;
-}
-.carousel__container:hover .carousel-item:hover{
-    transform: scale(1.5);
-    opacity: 1;
-}
-.carousel-item__img{
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-}
-.carousel-item__details {
-    align-items: flex-start;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-    bottom: 0;
-    display: flex;
-    font-size: 10px;
-    flex-direction: column;
-    justify-content: flex-end;
-    left: 0;
-    opacity: 0;
-    transition: 450ms opacity;
-    padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.carousel-item__details--img {
-    width: 20px;
-}
-
-.carousel-item:hover .carousel-item__details {
-    opacity: 1;
-}
-.carousel-item__details--title {
-    font-family: 'Muli', sans-serif;
-    color: white;
-    margin: 5px 0px 0px 0px;
-}
-.carousel-item__details--subtitle {
-    font-family: 'Muli', sans-serif;
-    color: white;
-    font-size: 8px;
-    margin: 3px 0px;
-}
-
 /*sobre mi / about me*/
 .about{
     min-height: 100vh;
@@ -192,8 +104,7 @@ span{
     align-items: center;
     position: relative;
     background: rgb(255,252,250);
-    background: linear-gradient(0deg, rgba(255,252,250,1) 0%, rgba(231,231,231,1) 100%);
-
+    background: linear-gradient(190deg, rgba(255,252,250,1) 50%, rgba(195,195,195,1) 100%);
 }
 .container-about{
     height: 500px;
@@ -203,8 +114,8 @@ span{
 }
 .saludo{
     color: cornflowerblue;
-    font-size: 3rem;
-    text-align: end;
+    font-size: 2.5rem;
+    text-align: center;
     text-shadow: 5px 5px 2px rgba(150, 150, 150, 1);
 }
 .container-description{
@@ -213,7 +124,7 @@ span{
 }
 
 .description{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
 }
 .linkcv{
@@ -221,20 +132,23 @@ span{
     font-size: 2.6rem;
     color: black;
 }
+
+
 /*My skills*/
-.skills{
-    min-height: 100vh;
-    padding: 30px;
-    background: rgb(255,252,250);
-    background: linear-gradient(0deg, rgba(255,252,250,1) 0%, rgba(231,231,231,1) 100%);
-}
 .title__skills{
     color: cornflowerblue;
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
     text-shadow: 5px 5px 2px rgba(150, 150, 150, 1);
-    padding-bottom: 40px;
 }
+.container__skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    height: 70%;
+}
+
 .container-language{
     height: 80vh;
     display: flex;
@@ -263,4 +177,83 @@ span{
 .fa-react {
     font-size: 70px;
     color: cyan;
+}
+
+/*seccion de proyectos*/
+.projects{
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background: rgb(255,252,250);
+    background: linear-gradient(350deg, rgba(255,252,250,1) 50%, rgba(195,195,195,1) 100%);
+}
+.title-projects{
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 2px rgba(150, 150, 150, 1);
+}
+.title2-projects{
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+.carousel-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    gap: 35px 35px;
+}
+.img-project{
+    height: 400px;
+    width: 670px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/*contacto*/
+.contact{
+    min-height: 90vh;
+    padding: 60px;
+    background: rgb(255,252,250);
+    background: linear-gradient(190deg, rgba(255,252,250,1) 50%, rgba(195,195,195,1) 100%);
+}
+.container-contact{
+    height: 100%;
+}
+.title-c{
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 2px rgba(150, 150, 150, 1);
+}
+.parrafo-c{
+    font-size: 1.5rem;
+    padding: 15px;
+}
+.grid-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 35px 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+.fa-twitter {
+    font-size: 70px;
+    color: skyblue;
+}
+.fa-github{
+    font-size: 70px;
+    color: black;
+}
+.fa-linkedin-in{
+    font-size: 70px;
+    color: cornflowerblue;
+}
+.fa-instagram{
+    font-size: 70px;
+    color: palevioletred;
+}
+.social{
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: 5px 5px 2px rgba(150, 150, 150, 1);
 }
