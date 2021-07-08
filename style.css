@@ -263,7 +263,6 @@ span{
     align-content: flex-end;
     height:70px;
     width: 100%;
-    
 }
 .title-footer {
     font-size: 1rem;
@@ -273,5 +272,195 @@ span{
     font-size: 1rem;
     text-decoration: none;
     color: cornflowerblue;
-
+}
+/* media */
+@media only screen and (max-width : 1500px){
+    .img-project{
+        height: 400px;
+        width: 535px;
+    }
+}
+@media only screen and (max-width : 1200px){
+    .img-project{
+        height: 300px;
+        width: 435px;
+    }
+}
+@media only screen and (max-width : 1000px){
+    .img-project{
+        height: 200px;
+        width: 335px;
+    }
+}
+@media only screen and (max-width : 800px){
+    .title {
+        font-size: 3.5rem
+    }
+    .title2{
+        font-size: 3.5rem;
+    }
+    .saludo{
+        font-size: 2.3rem;
+    }
+    .description{
+        font-size: 1.4rem;
+    }
+    .linkcv{
+        font-size: 2.2rem;
+    }
+    .fa-html5 {
+        font-size: 60px;
+    }
+    .fa-css3-alt {
+        font-size: 60px;
+    }
+    .fa-js-square {
+        font-size: 60px;
+    }
+    .fa-sass {
+        font-size: 60px;
+    }
+    .fa-bootstrap {
+        font-size: 60px;
+    }
+    .fa-react {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width : 700px){
+    .title {
+        font-size: 2.5rem
+    }
+    .title2{
+        font-size: 2.5rem;
+    }
+    .img-project{
+        height: 120px;
+        width: 235px;
+    }
+    .carousel-item{
+        height: 200px;
+    }
+    .carousel-container{
+        gap: 0px 0px;
+    }
+    .container a{
+        font-size: 2.5rem;
+    }
+    .container-about{
+        flex-wrap: wrap;
+    }
+    .container-description{
+        width: 580px;
+        padding-bottom: 65px;
+    }
+    .saludo{
+        font-size: 2.2rem;
+    }
+    .description{
+        font-size: 1.3rem;
+    }
+    .linkcv{
+        font-size: 2rem;
+    }
+    .title-projects{
+        font-size: 2.2rem;
+    }
+    .title2-projects{
+        font-size: 1.3rem;
+    }
+    .title-c{
+        font-size: 2.2rem;
+    }
+    .parrafo-c{
+        font-size: 1.3rem;
+    }
+    .social{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width : 600px){
+    .container-about{
+        flex-wrap: wrap;
+    }
+    .container-description{
+        width: 480px;
+    }
+    .saludo{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1.1rem;
+    }
+    .title__skills{
+        font-size: 2rem;
+    }
+    .linkcv{
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (max-width : 500px){
+    .container-about{
+        flex-wrap: wrap;
+    }
+    .container-description{
+        width: 370px;
+    }
+    .title__skills{
+        font-size: 1.9rem;
+    }
+    .linkcv{
+        font-size: 1.6rem;
+    }
+    .img-project{
+        height: 90px;
+        width: 145px;
+    }
+    .social{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width : 400px){
+    .title {
+        font-size: 2rem
+    }
+    .title2{
+        font-size: 2rem;
+    }
+    .saludo{
+        font-size: 1.9rem;
+    }
+    .description{
+        font-size: .9rem;
+    }
+    .container-description{
+        width: 310px;
+    }
+    .linkcv{
+        font-size: 1rem;
+    }
+    .title-projects{
+        font-size: 2rem;
+    }
+    .title2-projects{
+        font-size: 1rem;
+    }
+    .title-c{
+        font-size: 2rem;
+    }
+    .parrafo-c{
+        font-size: 1rem;
+    }
+    .social{
+        font-size: 1rem;
+    }
+    .grid-contact i{
+        font-size: 50px;
+    }
+    .title-footer{
+        font-size: .8rem;
+    }
+    .enlace-home{
+        font-size: .8rem;
+    }
 }
